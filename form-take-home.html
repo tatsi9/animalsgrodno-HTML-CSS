@@ -1,0 +1,56 @@
+
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Забрать домой</title>
+</head>
+<body>
+    <section class="form">
+        <div class="form-take-home__header">
+        <h3 class="form-take-home__h3">Забрать домой</h3>
+        <button class="form__close-btn"><img src="img/close-form-icon.svg"/></button>
+</div>
+        <hr class="form__hr">
+        <p class="form__info">
+            Оставьте информацию о себе. Мы позвоним вам и 
+            договоримся, когда вы сможете забрать себе
+            питомца.
+        </p>
+        <form action="/take-home" method="post">
+            <ul>
+                <li>
+                  <label for="name">Фамилия и имя</label>
+                  <input type="text" id="name" name="user_name" placeholder="Введите ваше имя и фамилию">
+                </li>
+                <li>
+                  <label for="mail">Номер телефона (только белорусский номер)</label>
+                  <input type="email" id="mail" name="user_mail" placeholder="Введите ваш номер телефона">
+                  <p class="form__li-p">Обязательное поле для заполнения</p>
+                </li>
+                <li>
+                  <label for="msg">Замечания</label>
+                  <textarea id="msg" name="user_message" placeholder="Введите информацию, которая будет полезна нам"></textarea>
+                </li>
+              </ul>
+          </form>
+
+
+        <p class="form__contacts">
+            Если у вас есть вопросы, можете позвонить нам:<br>
+            +375 (33) 6237879  Лена<br>
+            +375 (29) 7877791  Ольга<br>
+            +375 (29) 5837015  Рита
+        </p>
+        <div class="btn-group">
+        <button class="action-btn form-btn-send">Отправить</button>
+        <button class="action-btn transparent form-btn-cancel">Отмена</button>
+    </div>
+    </section>
+</body>
+</html>
+
+
